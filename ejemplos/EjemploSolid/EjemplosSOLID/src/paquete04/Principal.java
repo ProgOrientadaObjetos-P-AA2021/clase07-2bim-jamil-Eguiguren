@@ -26,19 +26,21 @@ public class Principal {
         
         
         
-        TransporteTransvia t3 = new TransporteTransvia();
-        t3.establecerTransvia("El trennero");
+        TransporteTransvia trans = new TransporteTransvia();
+        trans.establecerTransvia("El tren");
         
-        TransporteAereo aereo = new TransporteAereo();
-        aereo.establecerAerea("Las aguilas");
+        
+        TransporteAereo aereos = new TransporteAereo();
+        aereos.establecerAerea("Las aguilas");
+        
         
         TransporteMaritimo mar = new TransporteMaritimo();
         mar.establecerMaritima("Los marinos");
         
         
         
-        lista.add(t3);
-        lista.add(aereo);
+        lista.add(trans);
+        lista.add(aereos);
         lista.add(mar);
         
         
@@ -50,9 +52,12 @@ public class Principal {
         
         
         TiposTransporte tipos = new TiposTransporte();
+        
         tipos.establecerTransportes(lista);
+        
 //        tipos.establecerTransporteBus(bus);
 //        tipos.establecerTransporteTaxi(taxi);
+
         tipos.establecerPromedioTarifas();
         
         
