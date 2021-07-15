@@ -3,30 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package paquete04;
 
 /**
- * 
- * @author josef
+ *
+ * @author Usuario iTC
  */
 public class TransporteAereo extends Transporte {
-    
-    private String cooperativaAerea;
-    
-    
-    public void establecerAerea(String n){
-        cooperativaAerea = n;
+
+    private String aerolinea;
+
+    public void establecerAerolinea(String n) {
+        aerolinea = n;
     }
-    
+
     @Override
-    public void establecerTarifa(){
-        tarifa = 12.0 + (12.0*0.5);
+    public void establecerTarifa() {
+        tarifa = 3.00 + 0.50;
     }
-    
-    
-    public String obtenerAerea(){
-        return cooperativaAerea;
+
+    public String obtenerAerolinea() {
+        return aerolinea;
     }
 
 }

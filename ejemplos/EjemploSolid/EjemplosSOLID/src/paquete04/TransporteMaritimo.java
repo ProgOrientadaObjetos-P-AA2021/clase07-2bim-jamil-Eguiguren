@@ -3,30 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package paquete04;
 
 /**
- * 
- * @author josef
+ *
+ * @author Usuario iTC
  */
 public class TransporteMaritimo extends Transporte {
-    
-    private String cooperativaMaritima;
-    
-    
-    public void establecerMaritima(String n){
-        cooperativaMaritima = n;
+
+    private String NombreBarco;
+
+    public void establecerNombreBarco(String nombrebarco) {
+        NombreBarco = nombrebarco;
     }
-    
+
     @Override
-    public void establecerTarifa(){
-        tarifa = 9.0 + (9.0*0.5);
+    public void establecerTarifa() {
+        tarifa = 5.00 + 0.80;
     }
-    
-    
-    public String obtenerMaritima(){
-        return cooperativaMaritima;
+
+    public String obtenerNombreBarco() {
+        return NombreBarco;
     }
 
 }
